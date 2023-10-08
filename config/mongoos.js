@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 //
 
-const url = process.env.DATABASE;
+const url = "mongodb://localhost:27017/Blogs";
 // Code for Connecing database (Using Promise )
 mongoose.connect(url, {
     useNewUrlParser: true,

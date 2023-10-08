@@ -5,6 +5,7 @@ const db = require('./config/mongoos'); // requiring database
 const app = express();  // creating express app
 
 // Bodyparser (middle ware)
+app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Routes Code
